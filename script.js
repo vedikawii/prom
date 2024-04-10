@@ -17,7 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else if (nextPage === 'page4.html' && text.includes('yes')) {
                     window.location.href = nextPage;
                 } else if (nextPage === 'final.html') {
-                    window.location.href = nextPage;
+                    window.location.href = 'countdown.html'; // Redirect to countdown page
+                } else if (nextPage === 'countdown.html') {
+                    // No further redirection from countdown page
                 }
             }
         });
