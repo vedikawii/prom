@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prom?</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div id="container">
         <div id="question">how much can you bench?</div>
         <div id="options">
             <button onclick="goToPage('page2.html')">1. 50 Vedikas</button>
-            <button onclick="goToPage('page2.html')">2. Vedikas</button>
+            <button onclick="if (this.innerText.toLowerCase().includes('vedikas')) goToPage('page2.html')">2. Vedikas</button>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
-</html>
+</html> 
